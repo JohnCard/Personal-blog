@@ -176,7 +176,7 @@ footer{
     font-size: 1.2rem;
 }
 
-.icons-container i{
+.footer-inner .icons-container i{
     border: 2px solid white;
     padding: 10px 15px;
     font-size: 25px;
