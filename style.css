@@ -1,0 +1,192 @@
+/* default */
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-1b1b32{
+    background-color: #1b1b32;
+}
+
+.square-border{
+    border: 3px solid gainsboro;
+    min-height: 380px;
+}
+
+span.badge{
+    font-size: 16px;
+}
+
+.rem-1_2{
+    font-size: 1.2rem;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+/* * hero */
+
+.hero{
+    min-height: 650px;
+}
+
+.hero-imagen-desarrollador{
+    width: 140px;
+    height: 140px;
+}
+
+.hero-principal h2{
+    font-size: 1.2rem;
+}
+
+.hero-inferior-imagen{
+    max-width: 600px;
+    max-height: 300px;
+}
+
+/* * about */
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+}
+
+/* * experience */
+
+.square-border{
+    transition: all .2s ease-in;
+}
+
+.square-border i{
+    font-size: 40px;
+    width: 80px;
+    color: greenyellow;
+    background-color: #1b1b32;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.square-border:hover{
+    background-color: #1b1b32;
+    color: white;
+}
+
+/* * projects */
+
+.projects-section{
+    padding: 40px;
+}
+
+.projects-container{
+    padding: 30px;
+}
+
+.project{
+    position: relative;
+}
+
+.project img{
+    width: 100%;
+    transition: all .2s ease-in;
+}
+
+.overload{
+    /* normal values */
+    opacity: 0;
+    /* position values */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform */
+    transform: translate(-50%, -50%);
+    /* transition */
+    transition: all .2s ease-in;
+}
+
+.overload h5{
+    font-size: 1.5rem;
+}
+
+.overload a{
+    font-size: 50px;
+    color: black;
+}
+
+.project:hover img{
+    opacity: .2;
+}
+
+.project:hover .overload{
+    opacity: 1;
+}
+
+/* * articles */
+
+.card{
+    max-width: 620px;
+}
+
+/* * testimonies */
+
+.carousel{
+    max-width: 900px;
+    padding-bottom: 100px;
+}
+
+.carousel-item img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.carousel-item .container div{
+    min-height: 400px;
+}
+
+/* * footer */
+
+footer{
+    min-height: 600px;
+}
+
+.rectangle{
+    min-height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    position: relative;
+    top: -80px;
+}
+
+.rectangle button{
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.footer-inner{
+    max-width: 400px;
+    min-height: 250px;
+}
+
+.footer-inner > p{
+    font-size: 1.2rem;
+}
+
+/* * responsive media */
+
+@media screen and (max-width: 991px){
+    .navbar-brand img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 595px){
+    .hero-inferior-imagen, .sobre-mi .contenedor{
+        width: 90%;
+    }
+}
