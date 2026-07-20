@@ -35,27 +35,26 @@ span.badge{
 /* * hero */
 
 .hero{
-    min-height: 650px;
+    max-width: 650px;
 }
 
-.hero-imagen-desarrollador{
-    width: 140px;
-    height: 140px;
+.dev-image{
+    width: 200px;
 }
 
-.hero-principal h2{
-    font-size: 1.2rem;
-}
-
-.hero-inferior-imagen{
-    max-width: 600px;
-    max-height: 300px;
+.hero p{
+    font-size: 1.6rem;
 }
 
 /* * about */
 
-.sobre-mi .contenedor{
+.about-me{
     max-width: 600px;
+    padding: 40px 20px;
+}
+
+.about-me p{
+    font-size: 1.2rem;
 }
 
 /* * experience */
@@ -177,6 +176,13 @@ footer{
     font-size: 1.2rem;
 }
 
+.icons-container i{
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
 /* * responsive media */
 
 @media screen and (max-width: 991px){
@@ -185,8 +191,16 @@ footer{
     }
 }
 
-@media screen and (max-width: 595px){
-    .hero-inferior-imagen, .sobre-mi .contenedor{
-        width: 90%;
+@media screen and (max-width: 600px){
+    .hero{
+        width: 100%;
+    }
+
+    .hero p{
+        font-size: 20px;
+    }
+
+    .about-me p{
+        font-size: 1rem;
     }
 }
