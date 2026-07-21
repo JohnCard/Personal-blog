@@ -163,8 +163,15 @@ footer{
 }
 
 .rectangle button{
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 40px;
+    padding: 20px 30px;
+    transition: all .2s ease-in;
+}
+
+.rectangle button:hover{
+    background-color: white;
+    color: black;
 }
 
 .footer-inner{
@@ -176,11 +183,20 @@ footer{
     font-size: 1.2rem;
 }
 
-.footer-inner .icons-container i{
+.footer-inner .icons-container a{
     border: 2px solid white;
     padding: 10px 15px;
     font-size: 25px;
     border-radius: 50%;
+    transition: all .2s ease-in;
+}
+
+.footer-inner .icons-container a:hover{
+    background-color: white;
+}
+
+.footer-inner .icons-container a:hover i{
+    color: black;
 }
 
 /* * responsive media */
