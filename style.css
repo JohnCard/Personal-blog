@@ -201,7 +201,7 @@ footer{
 
 /* * responsive media */
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 990px){
     .navbar-brand img{
         display: none;
     }
